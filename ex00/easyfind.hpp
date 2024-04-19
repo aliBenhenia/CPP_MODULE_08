@@ -6,13 +6,12 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 19:55:55 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/18 15:36:47 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/18 17:40:19 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <vector>
-
 
 template<typename T>
 typename T::iterator easyfind(T &containerInt, int n)
