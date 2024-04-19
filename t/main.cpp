@@ -48,8 +48,10 @@ class A
 
 int main()
 {
-    A::B ob1;
-    ob1.print();
+  std::vector<int> v({1,3,355,5,56,6,7,78});   
+  std::vector<int>::iterator it = v.begin();
+
+
     return 0;
 }
 
