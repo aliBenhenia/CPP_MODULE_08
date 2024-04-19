@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 00:43:03 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/19 16:03:26 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/19 16:16:50 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Span &Span::operator=(Span const &obj)
 
 void Span::addNumber(int value)
 {
-    if (this->tab.size() <= this->maxSize)
+    if (this->tab.size() < this->maxSize)
         this->tab.push_back(value);
     else
         throw "Error: Span is full";
