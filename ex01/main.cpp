@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 00:48:45 by abenheni          #+#    #+#             */
-/*   Updated: 2024/03/27 02:02:28 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/19 16:08:29 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int main()
         sp.addNumber(17);
         sp.addNumber(9);
         sp.addNumber(11);
-        
         std::cout << "shortestSpan: " << sp.shortestSpan() << std::endl;
         std::cout << "longestSpan: " << sp.longestSpan() << std::endl;
 
+        std::cout << "**********************************************************************" << std::endl;
 
         Span sp1 = Span(5);
         // add mulpiple numbers
@@ -40,21 +40,27 @@ int main()
         std::cout << "shortestSpan: " << sp1.shortestSpan() << std::endl;
         std::cout << "longestSpan: " << sp1.longestSpan() << std::endl;
         
+        std::cout << "**********************************************************************" << std::endl;
 
         Span sp2 = Span(1);
         sp2.addNumber(5);
         std::cout << "shortestSpan: " << sp2.shortestSpan() << std::endl;
         std::cout << "longestSpan: " << sp2.longestSpan() << std::endl;
         
+        std::cout << "**********************************************************************" << std::endl;
+        
         Span sp3 = Span(0);
         std::cout << "shortestSpan: " << sp3.shortestSpan() << std::endl;
         std::cout << "longestSpan: " << sp3.longestSpan() << std::endl;
+        
+        std::cout << "**********************************************************************" << std::endl;
         
         Span sp4 = Span(2);
         sp4.addNumber(5);
         std::cout << "shortestSpan: " << sp4.shortestSpan() << std::endl;
         std::cout << "longestSpan: " << sp4.longestSpan() << std::endl;
         
+        std::cout << "**********************************************************************" << std::endl;
     }
     catch(const char *e)
     {
