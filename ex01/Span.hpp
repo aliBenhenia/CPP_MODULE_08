@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 00:11:39 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/01 22:52:14 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/19 18:00:47 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ class Span
         Span();
         Span(unsigned int n);
         Span(Span const &obj);
-        ~Span();
         Span &operator=(Span const &obj);
         void addNumber(int value);
         // There's a way to add numbers that's more practical than calling the
@@ -34,6 +33,7 @@ class Span
         void addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end);
         unsigned int shortestSpan();
         unsigned int longestSpan();
+        ~Span();
 };
 
 
