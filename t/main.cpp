@@ -1,57 +1,24 @@
 #include <iostream>
 #include <vector>
-// Templated containers ==> vector list ..etc
 
-template<typename T>
-class Dav
+template <typename T>
+typename T::iterator geet(T obj)
 {
-    public:
-        T *arr;
-        void push_back(T el)
-        {
-            T *p = arr;
-            while (*p)
-                p++;
-            *p = el;
-        }
-        T at(int idx)
-        {
-            return (arr[idx]);
-        }
-        class iter
-        {
-            public: 
-                T *curr;
-                
-        };
-};
-
-
-
-
-class A
-{
-    public:
-        void print()
-        {
-            std::cout << "A" << std::endl;
-        }
-        class B
-        {
-            public:
-                void print()
-                {
-                    std::cout << "B" << std::endl;
-                }
-        };
-};
+    return obj.begin();
+}
 
 int main()
 {
-  std::vector<int> v({1,3,355,5,56,6,7,78});   
-  std::vector<int>::iterator it = v.begin();
+    // int arr[] = {9,1,2,3,4,5,6,7,8,2,2,2,4,3,4};
+    // std::sort(arr, arr + 3);
+    // for(int i = 0; i < 6 ;i++)
+    // {
+    //     std::cout << arr[i] << std::endl;
+    // }
 
+    std::vector<int>::iterator v = geet(std::vector<int>({1,4,45,5}));
+
+    std::cout << v[3];
 
     return 0;
 }
-
