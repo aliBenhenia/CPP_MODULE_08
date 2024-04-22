@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 00:48:45 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/22 15:10:18 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:25:41 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,17 @@ int main()
         sp1.addNumber(v.begin(), v.end());
         std::cout << "shortestSpan: " << sp1.shortestSpan() << std::endl;
         std::cout << "longestSpan: " << sp1.longestSpan() << std::endl;
+        
+        std::cout << "**********************************************************************" << std::endl;
+        // test with 10000 numbers
+        Span sp5 = Span(10000);
+        std::vector<int> v1;
+        for (int i = 0; i < 10000; i++)
+            v1.push_back(i);
+        sp5.addNumber(v1.begin(), v1.end());
+        std::cout << "shortestSpan: " << sp5.shortestSpan() << std::endl;
+        std::cout << "longestSpan: " << sp5.longestSpan() << std::endl;
+        
         
         std::cout << "**********************************************************************" << std::endl;
 
