@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 21:54:44 by abenheni          #+#    #+#             */
-/*   Updated: 2024/03/27 23:32:22 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/23 18:59:01 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,13 @@
 #define MUTANTSTACK_HPP
 
 #include <stack>
-#include <iostream>
+#include <iostream> 
+#include <deque>
+#include <algorithm>
+#include <vector>
+#include <list>
 
-template <typename T>
+template <typename T, typename container_type=std::deque<T> >
 class MutantStack : public std::stack<T>
 {
     public:
@@ -26,7 +30,7 @@ class MutantStack : public std::stack<T>
         ~MutantStack() {}
         MutantStack &operator=(const MutantStack &src)
         {
-            std::stack<T>::operator=(src);
+            operator=(src);
             return (*this);
         }
 
