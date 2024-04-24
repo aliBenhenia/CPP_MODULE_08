@@ -6,7 +6,7 @@
 #    By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/14 22:08:55 by abenheni          #+#    #+#              #
-#    Updated: 2024/03/27 23:04:55 by abenheni         ###   ########.fr        #
+#    Updated: 2024/04/24 13:13:46 by abenheni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ OBJ = $(SRC:%.cpp=%.o)
 all : $(NAME)
 $(NAME) : $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ)  -o $(NAME) 
-%.o : %.cpp MultiConvert.hpp
+%.o : %.cpp MutantStack.hpp
 	$(CC) $(CFLAGS)  -c $< -o $@
 clean :
 	$(RM) $(OBJ)

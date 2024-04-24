@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 21:54:44 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/24 11:45:24 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/24 13:13:54 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class MutantStack : public std::stack<T>
             return (*this);
         }
 
-        typedef typename std::stack<T>::container_type::iterator iterator;
+        typedef typename container_type::iterator iterator;
         iterator begin() 
         {
             return (std::stack<T>::c.begin()); 
@@ -44,8 +44,8 @@ class MutantStack : public std::stack<T>
         { 
             return (std::stack<T>::c.end()); 
         }
-        
-        typedef typename std::stack<T>::container_type::const_iterator const_iterator;
+         
+        typedef typename container_type::const_iterator const_iterator;
         const_iterator begin() const 
         { 
             return (std::stack<T>::c.begin()); 
