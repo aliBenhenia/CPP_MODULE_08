@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 21:54:30 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/24 12:49:48 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/25 11:47:55 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
     MutantStack<int>::iterator ite = mstack.end();
     ++it;
     --it;
-    std::cout << mstack.top() << "*************\n";
+    std::cout << mstack.top() << "****************************************************************\n";
     while (it != ite)
     {
         std::cout << *it << std::endl;
