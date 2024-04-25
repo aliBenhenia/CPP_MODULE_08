@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 21:54:44 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/25 12:55:32 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/25 13:46:33 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class MutantStack : public std::stack<T, container_type>
         }
 
         typedef typename container_type::iterator iterator;
-        iterator begin() 
+        iterator begin()
         {
             return (std::stack<T, container_type>::c.begin());
         }

@@ -1,33 +1,30 @@
-#include <deque>
-#include <vector>
-#include <stack>
+// Online C++ compiler to run C++ program online
 #include <iostream>
-
-
-
-template <typename T, typename containerType=std::vector<T> > 
-class MyStack:public std::stack<int>
+class Base
 {
-    public :
-        typedef typename std::stack<T>::container_type::iterator iterator;
-        iterator begin()
+    public:
+        class Nested
         {
-            return(std::stack<T>::c.begin());
-        }
-        iterator end()
+            public:
+                void print()
+                {
+                    std::cout << "hello from nested class " << std::endl;
+                }
+        };
+};
+
+class Drived:public Base
+{
+    public:
+        void draw()
         {
-            return(std::stack<T>::c.end());
+            std::cout << "hello from drived class " << std::endl;
         }
 };
+
 int main()
 {
-    MyStack<int> data;
-    data.push(1);
-    data.push(2);
-    data.push(3);
-    data.push(4);
-    std::cout << "first el->" << data.top() << std::endl;
-    std::cout << *(data.begin()) << std::endl;
-    std::cout << *(data.end()  - 1) << std::endl;
+    Drived::Nested test;
+    test.print();
     return 0;
 }
