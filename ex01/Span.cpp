@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 00:43:03 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/22 17:53:16 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/25 16:30:09 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void Span::addNumber(int value)
 void Span::add_range_numbers(std::vector<int>::iterator begin, std::vector<int>::iterator end)
 {
     if (this->tab.size() + std::distance(begin, end) <= this->maxSize)
-        this->tab.insert(this->tab.end(), begin, end);
+        this->tab.insert(this->tab.end(), begin, end);// insert range of elements at idx
     else
         throw "Error: Span is full";
 }
