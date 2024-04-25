@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 21:54:44 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/24 13:13:54 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/25 12:55:32 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,38 +22,37 @@
 #include <list>
 
 template <typename T, typename container_type=std::deque<T> >
-class MutantStack : public std::stack<T>
+class MutantStack : public std::stack<T, container_type>
 {
     public:
-        MutantStack() : std::stack<T>() {}
-        MutantStack(const MutantStack &src) : std::stack<T>(src) {}
-        ~MutantStack() {}
+        MutantStack() : std::stack<T, container_type>() {}
+        MutantStack(const MutantStack &src) : std::stack<T, container_type>(src) {}
         MutantStack &operator=(const MutantStack &src)
         {
-            std::stack<T>::operator=(src);
+            std::stack<T, container_type>::operator=(src);
             return (*this);
         }
 
         typedef typename container_type::iterator iterator;
         iterator begin() 
         {
-            return (std::stack<T>::c.begin()); 
+            return (std::stack<T, container_type>::c.begin());
         }
         
         iterator end() 
         { 
-            return (std::stack<T>::c.end()); 
+            return (std::stack<T, container_type>::c.end()); 
         }
          
         typedef typename container_type::const_iterator const_iterator;
         const_iterator begin() const 
         { 
-            return (std::stack<T>::c.begin()); 
+            return (std::stack<T, container_type>::c.begin()); 
         }
-        
         const_iterator end() const 
         { 
-            return (std::stack<T>::c.end()); 
+            return (std::stack<T, container_type>::c.end()); 
         }
+        ~MutantStack() {}
 };
 #endif
