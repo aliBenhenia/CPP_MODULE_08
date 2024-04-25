@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 19:54:55 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/20 13:13:41 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/25 16:06:43 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ int main()
     v.push_back(3);
     v.push_back(4);
     v.push_back(5);
+    v.push_back(6);
+    v.push_back(7);
+    v.push_back(8);
 
     std::vector<int>::iterator result = easyfind(v, 4);
     if (result != v.end())
