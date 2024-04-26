@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 00:48:45 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/22 17:53:29 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/26 11:23:18 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main()
         std::cout << "**********************************************************************" << std::endl;
 
         Span sp1 = Span(5);
-        // add mulpiple numbers
+        // add numbers using a range
         std::vector<int> v;
         v.push_back(5);
         v.push_back(3);
@@ -46,7 +46,7 @@ int main()
         std::vector<int> v1;
         for (int i = 0; i < 10000; i++)
             v1.push_back(i);
-        sp5.add_range_numbers(v1.begin(), v1.end());
+        `
         std::cout << "shortestSpan: " << sp5.shortestSpan() << std::endl;
         std::cout << "longestSpan: " << sp5.longestSpan() << std::endl;
         

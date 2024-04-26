@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 21:54:44 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/25 13:46:33 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/26 11:30:54 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@
 #include <stack>
 #include <iostream> 
 #include <deque>
-#include <algorithm>
 #include <vector>
-#include <list>
 
 template <typename T, typename container_type=std::deque<T> >
 class MutantStack : public std::stack<T, container_type>
