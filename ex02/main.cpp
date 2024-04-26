@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 21:54:30 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/26 11:40:02 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/26 11:49:14 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,12 @@ void test_vector()
    mstack.push(5);
    mstack.push(6);
    mstack.push(7);
+   mstack.push(8);
+   mstack.push(9);
+   mstack.push(10);
+   mstack.push(11);
+   mstack.push(12);
+   mstack.push(13);
    std::cout << "first element : " << mstack.top() << std::endl;
    MutantStack<int, std::vector<int> >::iterator it = mstack.begin();
    MutantStack<int, std::vector<int> >::iterator ite = mstack.end();
