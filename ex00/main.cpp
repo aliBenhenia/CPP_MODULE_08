@@ -6,7 +6,7 @@
 /*   By: abenheni <abenheni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 19:54:55 by abenheni          #+#    #+#             */
-/*   Updated: 2024/04/25 16:06:43 by abenheni         ###   ########.fr       */
+/*   Updated: 2024/04/26 10:36:18 by abenheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ int main()
         std::cout << "Value found " << *result << std::endl;
     else
         std::cout << "Value not found" << std::endl;
-    return 0;
+    return (0);
 }
